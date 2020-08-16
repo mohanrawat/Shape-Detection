@@ -1,4 +1,3 @@
-
 #Shape_Detection
 
 import cv2
@@ -64,11 +63,8 @@ def getContours(img):
                         (x+(w//2)-10,y+(h//2)-10),cv2.FONT_HERSHEY_COMPLEX,0.7,
                         (0,0,0),2)
 
-
-
-
-path = 'C:\\Users\\Lenovo\\Pictures\\Shape.png'
-img = cv2.imread(path)
+file = input('Enter Path of Image Input File : ')
+image = cv2.imread(file)
 imgContour = img.copy()
 
 imgGray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
